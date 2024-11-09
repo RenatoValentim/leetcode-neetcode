@@ -19,6 +19,11 @@ func TestContainsDuplicate(t *testing.T) {
         input: []int{},
         expected: false,
       },
+      {
+        name: "Should return true when has a duplicated value",
+        input: []int{1, 2, 3, 3},
+        expected: true,
+      },
   }
 
   for _, tc := range testCases {
