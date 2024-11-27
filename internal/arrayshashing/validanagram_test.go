@@ -21,6 +21,12 @@ func TestValidAnagram(t *testing.T) {
         input2: "",
         expected: false,
       },
+      {
+        name: "Should return false when length is not equals",
+        input1: "a",
+        input2: "aa",
+        expected: false,
+      },
   }
 
   for _, tc := range testCases {
