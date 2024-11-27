@@ -27,6 +27,18 @@ func TestValidAnagram(t *testing.T) {
         input2: "aa",
         expected: false,
       },
+      {
+        name: "Should return true for the valid anagram",
+        input1: "anagram",
+        input2: "nagaram",
+        expected: true,
+      },
+      {
+        name: "Should return true for the valid anagram",
+        input1: "rat",
+        input2: "car",
+        expected: false,
+      },
   }
 
   for _, tc := range testCases {
