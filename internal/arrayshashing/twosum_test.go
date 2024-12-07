@@ -22,6 +22,12 @@ func TestTwoSum(t *testing.T) {
 			input2:   10,
 			expected: []int{},
 		},
+		{
+			name:     "Should return an empty array when providing a slice with len < 2",
+			input1:   []int{1},
+			input2:   10,
+			expected: []int{},
+		},
 	}
 
 	for _, tc := range testCases {
