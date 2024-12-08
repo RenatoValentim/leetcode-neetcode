@@ -28,6 +28,18 @@ func TestTwoSum(t *testing.T) {
 			input2:   10,
 			expected: []int{},
 		},
+		{
+			name:     "Should return a slice with of the two numbers that sum up to the target",
+			input1:   []int{2, 7, 11, 15},
+			input2:   9,
+			expected: []int{0, 1},
+		},
+		{
+			name:     "Should return a slice with of the two numbers that sum up to the target",
+			input1:   []int{3, 2, 4},
+			input2:   6,
+			expected: []int{1, 2},
+		},
 	}
 
 	for _, tc := range testCases {
